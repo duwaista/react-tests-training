@@ -8,6 +8,7 @@ test("Text list test", () => {
   const elements = screen.getAllByTestId("list-item");
 
   expect(elements).toHaveLength(list.length);
+  
   for (let i; i <= elements.length; i++) {
     expect(elements[i]).toBeInTheDocument();
     expect(elements[i]).toHaveTextContent(list[i]);

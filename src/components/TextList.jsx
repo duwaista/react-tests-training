@@ -10,7 +10,7 @@ export default function TextList({ list }) {
           </span>
         ))}
       </div>
-      {!list.lenght && <span data-testid="empty-list">No text</span>}
+      {!list.length && <span data-testid="empty-list">No text</span>}
     </>
   );
 }
